@@ -15,7 +15,7 @@ public  class CheckTriangle {
         }
     }
 
-    private Triangle triangle;
+
     private float a;
     private float b;
     private float c;

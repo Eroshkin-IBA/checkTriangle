@@ -33,17 +33,24 @@ class CheckTriangleTest {
 
     @Test
     void isTriangle() {
+        System.out.println("Тест на треугольник");
+        CheckTriangle checkTriangle = new CheckTriangle(2.9f,6,5);
+        assertTrue(checkTriangle.isTriangle());
     }
 
     @Test
     void isEquilateralTriangle() {
+        System.out.println("Тест на равносторонний треугольник");
+        CheckTriangle checkTriangle = new CheckTriangle(3,3,3);
+        assertTrue(checkTriangle.isEquilateralTriangle());
     }
 
     @Test
     void isIsoscelesTriangle() {
+        System.out.println("Тест на равнобедренный треугольник");
+        CheckTriangle checkTriangle = new CheckTriangle(2.9f,6,6);
+        assertTrue(checkTriangle.isIsoscelesTriangle());
     }
 
-    @Test
-    void triangleType() {
-    }
+
 }
